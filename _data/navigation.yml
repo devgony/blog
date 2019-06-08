@@ -31,9 +31,9 @@ docs:
     url: /categories/ruby/
   - title: "Life"
     children:
-      - title: "Swim"
-        url: /categories/swim/
-      - title: "Cycle"
-        url: /categories/cycle/
+      - title: "Swimming"
+        url: /tags/swimming/
+      - title: "Cycling"
+        url: /tags/cycling/
       - title: "Running"
-        url: /categories/running/
+        url: /tags/running/

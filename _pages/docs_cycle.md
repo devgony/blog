@@ -1,7 +1,7 @@
 ---
-title: "About Cycle"
-layout: category
-permalink: /categories/cycle/
-taxonomy: cycle
+title: "About Cycling"
+layout: tag
+permalink: /tags/cycling/
+taxonomy: cycling
 author_profile: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: "About Running"
-layout: category
-permalink: /categories/running/
+layout: tag
+permalink: /tags/running/
 taxonomy: running
 author_profile: true
 ---
