@@ -19,7 +19,7 @@ main:
 
 docs:
   - title: "Database"
-    url: /categories/Database/
+    url: /categories/database/
     children:
       - title: "Oracle"
         url: /tags/oracle/
