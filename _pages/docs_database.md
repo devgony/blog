@@ -1,5 +1,5 @@
 ---
-title: "About DATABASE"
+title: "Category: DATABASE"
 layout: category
 permalink: /categories/database/
 taxonomy: database

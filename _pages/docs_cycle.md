@@ -1,5 +1,5 @@
 ---
-title: "About Cycling"
+title: "Tag: Cycling"
 layout: tag
 permalink: /tags/cycling/
 taxonomy: cycling

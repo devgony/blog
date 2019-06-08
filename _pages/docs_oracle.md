@@ -1,5 +1,5 @@
 ---
-title: "About Oracle"
+title: "Tag: Oracle"
 layout: tag
 permalink: /tags/oracle/
 taxonomy: oracle

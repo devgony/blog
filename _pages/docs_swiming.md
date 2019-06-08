@@ -1,5 +1,5 @@
 ---
-title: "About Swimming"
+title: "Tag: Swimming"
 layout: tag
 permalink: /tags/swimming/
 taxonomy: swimming

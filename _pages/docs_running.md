@@ -1,5 +1,5 @@
 ---
-title: "About Running"
+title: "Tag: Running"
 layout: tag
 permalink: /tags/running/
 taxonomy: running
