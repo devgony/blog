@@ -30,6 +30,7 @@ docs:
   - title: "Ruby"
     url: /categories/ruby/
   - title: "Life"
+    url: /categories/life/
     children:
       - title: "Swimming"
         url: /tags/swimming/
