@@ -1,0 +1,38 @@
+---
+title: SQLServer) table variable is pushed out to tempdb
+categories: database
+tags: sqlserver
+---
+
+In SQL Server, table variable can be pushed out to tempdb.
+In MSDN[^1]
+
+>A table variable is not necessarily memory resident. 
+Under memory pressure, the pages belonging to a table variable can be pushed out to tempdb.
+
+So, we should be careful when we use table variable in procedure.
+
+There are lots of alternatives.
+In MSDN[^2]
+
+A memory-optimized table variable:
+* Is stored only in memory, and has no component on disk.
+* Involves no IO activity.
+* Involves no tempdb utilization or contention.
+* Can be passed into a stored proc as a table-valued parameter (TVP).
+* Must have at least one index, either hash or nonclustered.
+** For a hash index, the bucket count should ideally be 1-2 times the number of expected unique index keys, but overestimating bucket count is usually fine (up to 10X). For details see Indexes for Memory-Optimized Tables.
+
+A. Scenario: Replace global tempdb ##table
+B. Scenario: Replace session tempdb #table
+C. Scenario: Table variable can be MEMORY_OPTIMIZED=ON
+```SQL
+CREATE TYPE dbo.typeTableD  
+    AS TABLE  
+    (  
+        Column1  INT   NOT NULL   INDEX ix1,  
+        Column2  CHAR(10)  
+    )  
+    WITH  
+        (MEMORY_OPTIMIZED = ON);  
+```
